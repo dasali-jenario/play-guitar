@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Guitar Practice App with Dice
 
 This web application is designed to help guitarists practice playing along with random dice rolls. Each roll corresponds to a specific sound, offering a unique and engaging way to practice.
@@ -31,3 +32,7 @@ Dice images are provided by [studio4rt](https://www.freepik.com/free-vector/dice
 
 For more details, visit the [GitHub Repository](https://github.com/dasali-jenario/Guitar-with-dice).
 
+=======
+# play-guitar
+new guitar app repository
+>>>>>>> db99b0bbd7fe1b0d6e53e561018e0931f9938778
