@@ -1,7 +1,9 @@
-      "homepage": "https://github.com/dasali-jenario/play-guitar",
-      
-"scripts": {
-  //...
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+{
+  "homepage": "https://github.com/dasali-jenario/play-guitar",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+    //... other scripts
+  }
+  //... other sections
 }
