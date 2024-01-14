@@ -1,0 +1,25 @@
+# .github/workflows/build.yml
+
+name: Increment Build Number
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Increment build number
+      run: |
+        # Extract build number from index.html
+        build_number=$(grep -oP '(?<=Build number: <span id="build-number">)\d+' public/index.html)
+        # Increment build number
+        new_build_number=$((build_number + 1))
+        # Replace build number in index.html
+        sed -i "s/$build_number/$new_build_number/" public/index.html
+    - name: Commit changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -am "Increment build number"
+        git push
